@@ -50,7 +50,7 @@ async function runCommand(command) {
       speak("DARK is thinking...");
 
       const result = await fetch(
-        "PASTE_YOUR_CLOUDFLARE_WORKER_URL_HERE",
+        "https://dark-ai-backend.sdinesha747.workers.dev/",
         {
           method: "POST",
           headers: {
