@@ -1,0 +1,188 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(ellipse at 50% 35%, #102e4a, #050d18 70%);
+  color: #d8f6ff;
+  font-family: Arial, sans-serif;
+}
+
+.app {
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+  padding: 25px 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  font-size: 27px;
+  letter-spacing: 8px;
+  color: #67dcff;
+}
+
+h1 span {
+  color: white;
+}
+
+.status {
+  font-size: 9px;
+  letter-spacing: 2px;
+  color: #5be5b1;
+}
+
+.hero {
+  text-align: center;
+  padding-top: 35px;
+}
+
+.hero p:first-child {
+  font-size: 10px;
+  letter-spacing: 4px;
+  color: #5baccb;
+}
+
+.reactor {
+  position: relative;
+  width: 190px;
+  height: 190px;
+  margin: 45px auto 30px;
+  display: grid;
+  place-items: center;
+}
+
+.ring {
+  position: absolute;
+  border: 2px solid #32cfff;
+  border-radius: 50%;
+  box-shadow: 0 0 15px #008ec5;
+}
+
+.ring1 {
+  inset: 0;
+  border-style: dashed;
+  animation: rotate 12s linear infinite;
+}
+
+.ring2 {
+  inset: 17px;
+  border-color: #4de3ff transparent;
+  animation: rotate 7s linear infinite reverse;
+}
+
+.core {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: radial-gradient(circle, #8beaff, #0874a9);
+  color: #00121e;
+  font-size: 38px;
+  font-weight: bold;
+  box-shadow: 0 0 35px #16bfff;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+h2 {
+  letter-spacing: 4px;
+  font-size: 19px;
+  text-align: center;
+}
+
+.message {
+  min-height: 75px;
+  padding: 18px;
+  line-height: 1.6;
+  border: 1px solid #164e70;
+  border-radius: 12px;
+  background: #081a2a;
+  margin-top: 25px;
+}
+
+.controls {
+  display: flex;
+  gap: 8px;
+  margin-top: 15px;
+}
+
+input {
+  min-width: 0;
+  flex: 1;
+  padding: 15px;
+  border: 1px solid #267ca0;
+  border-radius: 9px;
+  background: #071726;
+  color: white;
+  font-size: 14px;
+}
+
+button {
+  border: 1px solid #278db6;
+  border-radius: 9px;
+  background: #0a2940;
+  color: #bcefff;
+  padding: 13px;
+  font-weight: bold;
+}
+
+button:active {
+  background: #12628a;
+}
+
+.mic {
+  width: 100%;
+  margin-top: 12px;
+  padding: 16px;
+  letter-spacing: 2px;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 22px;
+}
+
+.actions button {
+  flex: 1;
+  font-size: 10px;
+}
+
+h3 {
+  margin-top: 35px;
+  font-size: 12px;
+  letter-spacing: 3px;
+  color: #62c8e9;
+}
+
+.modules {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.modules button {
+  min-height: 60px;
+  letter-spacing: 2px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 9px;
+  letter-spacing: 3px;
+  color: #52849d;
+}
